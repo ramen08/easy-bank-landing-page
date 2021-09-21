@@ -1,0 +1,42 @@
+//======================================================================
+// Button Item
+// - Main Header
+//======================================================================
+
+//-----------------------------------------------------
+// Main Header
+//-----------------------------------------------------
+
+#main-header #et-top-navigation .nav .button-item{
+  > a{
+    @include border-radius(17px);
+    border: solid 1px $color-green-2;
+    background: transparent !important;
+    color: $color-green-2 !important;
+    font-weight: $fw-bold !important;
+    padding: 2px 21px 1px !important;
+    line-height: 1.76!important;
+    font-size: 17px!important;
+    min-width: 181px;
+    text-align: center;
+
+    &:before{
+      display: none !important;
+    }
+
+    &:hover{
+      color: $color-white !important;
+      background: $color-green-2 !important;
+    }
+  }
+}
+
+#main-header #et-top-navigation .nav {
+
+  .button-item.current-menu-item:not(.ir-link-item)>a,
+  .button-item.current_page_ancestor:not(.ir-link-item)>a {
+    color: $color-white !important;
+    background: $color-green-2 !important;
+  }
+  
+} 

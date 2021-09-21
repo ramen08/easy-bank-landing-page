@@ -1,0 +1,65 @@
+//======================================================================
+// TRANSPARENT NAV
+// - Main Header
+//======================================================================
+
+//-----------------------------------------------------
+// Main Header
+//-----------------------------------------------------
+.et_transparent_nav{
+  #main-header:not(.et-fixed-header){
+    background: transparent !important;
+
+    #logo{
+      display: none;
+    }
+
+    .logo-transparent-nav {
+      @include animate(all .4s ease-in-out);
+      @include transform( translateZ(0) );
+      margin-bottom: 0;
+      max-height: 57%;
+      display: inline-block;
+      float: none;
+      vertical-align: middle;
+      max-width: 192px;
+
+    }
+
+    #et-top-navigation .menu,
+    #et-top-navigation .nav{
+
+      >li{
+        >a{
+          color: $color-white;
+          opacity: 1;
+
+          &:hover{
+            color: $color-green-2;
+
+            &:before{
+              background: transparent;
+            }
+          }
+        }
+        &:hover,
+        &.et-hover{
+          >a {
+            color: $color-green-2;
+
+            &:before{
+              background: transparent !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//-----------------------------------------------------
+//
+//-----------------------------------------------------
+.et_transparent_nav{
+
+}

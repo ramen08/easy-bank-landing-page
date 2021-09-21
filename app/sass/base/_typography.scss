@@ -1,0 +1,351 @@
+/* ---------------------------------------------------------
+   Typography
+   ---------------------------------------------------------*/
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: $headings-font-family;
+  font-weight: $fw-medium;
+  line-height: 1.1;
+  padding:0 0 10px;
+  color: $headings-color;
+  letter-spacing: normal;
+}
+
+.et_pb_column_1_3 h1,
+.et_pb_column_1_4 h1,
+.et_pb_column_1_5 h1,
+.et_pb_column_1_6 h1,
+.et_pb_column_2_5 h1,
+h1, .h1 {
+  font-size: $h1-font-size;
+  line-height: 1.178572;
+}
+
+.et_pb_column_1_3 h2,
+.et_pb_column_1_4 h2,
+.et_pb_column_1_5 h2,
+.et_pb_column_1_6 h2,
+.et_pb_column_2_5 h2,
+h2, .h2 {
+  font-size: $h2-font-size;
+  line-height: 1.2380952381;
+}
+
+.et_pb_column_1_3 h3,
+.et_pb_column_1_4 h3,
+.et_pb_column_1_5 h3,
+.et_pb_column_1_6 h3,
+.et_pb_column_2_5 h3,
+h3, .h3 {
+  font-size: $h3-font-size;
+  line-height: 1.303030303;
+}
+
+.et_pb_column_1_3 h4,
+.et_pb_column_1_4 h4,
+.et_pb_column_1_5 h4,
+.et_pb_column_1_6 h4,
+.et_pb_column_2_5 h4,
+h4, .h4 {
+  font-size: $h4-font-size;
+  text-transform: uppercase;
+  line-height:1.5555555556;
+  letter-spacing: 1.5px;
+}
+
+.et_pb_column_1_3 h5,
+.et_pb_column_1_4 h5,
+.et_pb_column_1_5 h5,
+.et_pb_column_1_6 h5,
+.et_pb_column_2_5 h5,
+h5, .h5 {
+  font-size: $h5-font-size;
+}
+
+.et_pb_column_1_3 h6,
+.et_pb_column_1_4 h6,
+.et_pb_column_1_5 h6,
+.et_pb_column_1_6 h6,
+.et_pb_column_2_5 h6,
+h6, .h6 {
+  font-size: $h6-font-size;
+}
+
+@include media('<tablet-1024') {
+
+  .et_pb_column_1_3 h1,
+  .et_pb_column_1_4 h1,
+  .et_pb_column_1_5 h1,
+  .et_pb_column_1_6 h1,
+  .et_pb_column_2_5 h1,
+  h1, .h1{
+    font-size: $h1-font-size-tablet;
+  }
+
+  .et_pb_column_1_3 h2,
+  .et_pb_column_1_4 h2,
+  .et_pb_column_1_5 h2,
+  .et_pb_column_1_6 h2,
+  .et_pb_column_2_5 h2,
+  h2, .h2 {
+    font-size: $h2-font-size-tablet;
+    word-wrap: break-word;
+  }
+
+  .et_pb_column_1_3 h3,
+  .et_pb_column_1_4 h3,
+  .et_pb_column_1_5 h3,
+  .et_pb_column_1_6 h3,
+  .et_pb_column_2_5 h3,
+  h3, .h3 {
+    font-size: $h3-font-size-tablet;
+  }
+
+  .et_pb_column_1_3 h4,
+  .et_pb_column_1_4 h4,
+  .et_pb_column_1_5 h4,
+  .et_pb_column_1_6 h4,
+  .et_pb_column_2_5 h4,
+  h4, .h4 {
+    font-size: $h4-font-size-tablet;
+  }
+
+  .et_pb_column_1_3 h5,
+  .et_pb_column_1_4 h5,
+  .et_pb_column_1_5 h5,
+  .et_pb_column_1_6 h5,
+  .et_pb_column_2_5 h5,
+  h5, .h5 {
+    font-size: $h5-font-size-tablet;
+  }
+
+  .et_pb_column_1_3 h6,
+  .et_pb_column_1_4 h6,
+  .et_pb_column_1_5 h6,
+  .et_pb_column_1_6 h6,
+  .et_pb_column_2_5 h6,
+  h6, .h6 {
+    font-size: $h6-font-size-tablet;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .et_pb_column_1_3 h1,
+  .et_pb_column_1_4 h1,
+  .et_pb_column_1_5 h1,
+  .et_pb_column_1_6 h1,
+  .et_pb_column_2_5 h1,
+  h1, .h1{
+    font-size: $h1-font-size-mobile;
+  }
+
+  .et_pb_column_1_3 h2,
+  .et_pb_column_1_4 h2,
+  .et_pb_column_1_5 h2,
+  .et_pb_column_1_6 h2,
+  .et_pb_column_2_5 h2,
+  h2, .h2 {
+    font-size: $h2-font-size-mobile;
+    word-wrap: break-word;
+  }
+
+  .et_pb_column_1_3 h3,
+  .et_pb_column_1_4 h3,
+  .et_pb_column_1_5 h3,
+  .et_pb_column_1_6 h3,
+  .et_pb_column_2_5 h3,
+  h3, .h3 {
+    font-size: $h3-font-size-mobile;
+  }
+
+  .et_pb_column_1_3 h4,
+  .et_pb_column_1_4 h4,
+  .et_pb_column_1_5 h4,
+  .et_pb_column_1_6 h4,
+  .et_pb_column_2_5 h4,
+  h4, .h4 {
+    font-size: $h4-font-size-mobile;
+  }
+
+  .et_pb_column_1_3 h5,
+  .et_pb_column_1_4 h5,
+  .et_pb_column_1_5 h5,
+  .et_pb_column_1_6 h5,
+  .et_pb_column_2_5 h5,
+  h5, .h5 {
+    font-size: $h5-font-size-mobile;
+  }
+
+  .et_pb_column_1_3 h6,
+  .et_pb_column_1_4 h6,
+  .et_pb_column_1_5 h6,
+  .et_pb_column_1_6 h6,
+  .et_pb_column_2_5 h6,
+  h6, .h6 {
+    font-size: $h6-font-size-mobile;
+  }
+
+}
+
+
+p {
+  padding-bottom: 1.5em;
+  margin: 0;
+
+  &:last-of-type{
+    padding-bottom: 0;
+  }
+}
+
+a {
+  @extend %linkAnimate;
+  color: $link-color;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $link-hover-color;
+    outline: none;
+  }
+}
+
+.fw-medium{
+  font-weight: $fw-medium;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+.background-dark,
+.et_pb_bg_layout_dark{
+  color: $color-white;
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6,
+  .h{
+    color: $color-white;
+  }
+
+  a{
+    color: $color-white;
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+  }
+}
+
+sub,sup{
+  position: static;
+  height: auto;
+}
+
+sup {
+  bottom: auto;
+  font-size: .7em;
+  vertical-align: top;
+}
+
+
+sub {
+  font-size: 0.8em;
+  top: auto;
+  vertical-align: bottom;
+}
+
+.body-large{
+  font-size: 21px;
+  font-weight: $fw-light;
+  line-height: 1.4761904762;
+  letter-spacing: 0.5px;
+
+  @include media('<tablet-1024') {
+    font-size: 18px;
+  }
+}
+
+.quote-text{
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: 1.4545454545;
+
+  @include media('<tablet-1024') {
+    font-size: 37px;
+  }
+}
+
+
+.label-text{
+  font-size: 18px;
+  color: $color-black;
+  font-weight: $fw-light;
+  letter-spacing: 0;
+  line-height: 1.9444444444;
+
+  @include media('<tablet-1024') {
+    font-size: 15px;
+  }
+}
+
+label{
+  @extend .label-text;
+}
+
+.copyright-text{
+  font-weight: $fw-light;
+  color: $color-black;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 1.4666666667;
+
+  @include media('<tablet-1024') {
+    font-size: 13px;
+  }
+}
+
+.article-block{
+  h3{
+    padding: 35px 0 30px;
+  }
+
+  a{
+    color: $color-dark-blue;
+
+    &:hover{
+      border-bottom: 1px solid $color-dark-blue;
+    }
+    
+  }
+
+  ul{
+    margin-left: 20px;
+  }
+}
+
+.font-47{
+  font-size: 47px;
+  font-weight: $fw-medium;
+  letter-spacing: 0.2px;
+}
+

@@ -1,0 +1,63 @@
+//===================================================
+// FOOTER
+// - Main Footer
+// - Grid
+// - Typography
+//===================================================
+//---------------------------------------------------
+// - Main Footer
+//---------------------------------------------------
+#main-footer{
+  background-color: $color-martinique;
+}
+
+//---------------------------------------------------
+// - Grid
+//---------------------------------------------------
+#main-footer{
+  padding: 48px 0 31px;
+
+  .footer-logo-col{
+    width: 25%;
+    float: left;
+  }
+
+  .footer-menu-col{
+    width: 25%;
+    float: left;
+  }
+
+  .copyright-col{
+    width: 25%;
+    float: left;
+    text-align: right;
+
+    .btn-wrapper{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//---------------------------------------------------
+// - Typography
+//---------------------------------------------------
+#main-footer{
+
+  .footer-menu-col{
+    ul{
+      list-style: none;
+      margin: 0;
+
+      li{
+        a{
+          color: $color-light-grayish-blue;
+        }
+      }
+    }
+  }
+
+  .copyright-container{
+    color: $color-grayish-blue;
+  }
+}
+
