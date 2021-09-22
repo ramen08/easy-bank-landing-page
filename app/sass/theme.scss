@@ -49,19 +49,10 @@ $media-expressions: (
 @import "vendor/jcf";
 //@import "vendor/slick";
  
-//layouts
+//layouts 
 @import "layout/header/header";
 @import "layout/footer/footer";
+@import "layout/pages/home/banner-section";
 
 //modules
 @import "module/builder/buttons/button";
-
-//row 
-
-
-//sections
-
-//widgets
-
-//shortcodes
-

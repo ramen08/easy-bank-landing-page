@@ -3,6 +3,7 @@
 // - Main Footer
 // - Grid
 // - Typography
+// - Social Media Icons
 //===================================================
 //---------------------------------------------------
 // - Main Footer
@@ -15,25 +16,25 @@
 // - Grid
 //---------------------------------------------------
 #main-footer{
-  padding: 48px 0 31px;
+  padding: 48px 0 36px;
 
   .footer-logo-col{
-    width: 25%;
+    width: 26%;
     float: left;
   }
 
   .footer-menu-col{
-    width: 25%;
+    width: 17.1%;
     float: left;
   }
 
   .copyright-col{
-    width: 25%;
+    width: 39.8%;
     float: left;
     text-align: right;
 
     .btn-wrapper{
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -47,10 +48,18 @@
     ul{
       list-style: none;
       margin: 0;
+      padding: 0;
 
       li{
+        padding-bottom: 6px;
+
         a{
           color: $color-light-grayish-blue;
+          font-size: 15px;
+
+          &:hover{
+            color: $color-lime-green;
+          }
         }
       }
     }
@@ -58,6 +67,39 @@
 
   .copyright-container{
     color: $color-grayish-blue;
+    font-size: 16px;
   }
 }
 
+//---------------------------------------------------
+// - Social Media Icons
+//---------------------------------------------------
+#main-footer{
+
+  .social-media-icons{
+    margin-top: 47px;
+    
+    .social-media-icon {
+      display: inline-block;
+      padding-right: 9px;
+
+      .img-hover{
+        display: none;
+      }
+
+      a{
+        
+        &:hover{
+          
+          >img{
+            display: none;
+
+            &.img-hover{
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

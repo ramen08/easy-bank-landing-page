@@ -1,0 +1,38 @@
+//===================================================
+// Banner Section
+// - Grid
+// - Typography
+//===================================================
+//---------------------------------------------------
+// - Grid
+//---------------------------------------------------
+.banner-section{
+    background-image: url('#{$images-path}/bg-intro-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+  .banner-row{
+
+        .col{
+          width: 50%;
+          float: left;
+        }
+
+        .content-col{
+            padding: 100px 0 170px;
+        }
+
+        .image-col{
+          position: absolute;
+          right: -124px;
+        }
+    }  
+}
+
+//---------------------------------------------------
+// - Typography
+//---------------------------------------------------
+.banner-section{
+
+}

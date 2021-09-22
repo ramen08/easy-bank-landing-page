@@ -19,7 +19,7 @@
 
   .container{
     position: relative;
-    padding: 7px 0 17px;
+    padding: 7px 0;
   }
 
   .logo-container{
@@ -42,9 +42,11 @@
   }
 
   .navigation-container{
-    display: inline-block;
+    display: flex;
     width: 67%;
     float: right;
+    align-items: center;
+    justify-content: space-between;
 
     ul{
       list-style: none;
@@ -56,12 +58,24 @@
         
         a{
           color: $color-grayish-blue;
+          font-size: 15px;
+          position: relative;
+          padding-bottom: 31px;
+
+          &:hover,
+          &:focus{
+            &:after{
+              content: '';
+              height: 4px;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, $color-lime-green, $color-bright-cyan) !important;
+            }
+          }
         }
       }
-    }
-
-    .btn-wrapper{
-      float: right;
     }
   }
 }

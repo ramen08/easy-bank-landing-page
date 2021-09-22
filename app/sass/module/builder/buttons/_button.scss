@@ -14,28 +14,32 @@ $big_button_padding: 15px 24px;
 //----------------------------------------------------------
 .btn {
   color: $color-white;
-  padding: 11px 15px;
+  padding: 9px 34px 10px;
   border-radius: 50px;
+  font-size: 15px;
+  display: inline-block;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, $color-lime-green, $color-bright-cyan) !important;
+
+  &:hover{
+    color: $color-white;
+    position: relative;
+
+    &:after{
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: $color-white;
+      border-radius: 50px;
+      top: 0;
+      left: 0;
+      opacity: .4;
+    }
+  }
 }
 
 
 // ---------------------------------------------------------
 //  on light background
-//----------------------------------------------------------
-
-/* default button style */
-
-// ---------------------------------------------------------
-// On Dark background
-//----------------------------------------------------------
-
-
-// ---------------------------------------------------------
-//  Big Button
-//----------------------------------------------------------
-
-
-// ---------------------------------------------------------
-//  Big Button
 //----------------------------------------------------------
