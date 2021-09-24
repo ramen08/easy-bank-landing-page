@@ -34,7 +34,7 @@ $media-expressions: (
 @import 'base/variables';
 
 //vendors - bases
-@import 'vendor/include-media';
+@import 'vendor/include-media'; 
 
 
 //base
@@ -47,9 +47,9 @@ $media-expressions: (
 
 //vendors - plugins
 @import "vendor/jcf";
-//@import "vendor/slick";
- 
-//layouts 
+//@import "vendor/slick"; 
+
+//layouts
 @import "layout/header/header";
 @import "layout/footer/footer";
 @import "layout/pages/home/banner-section";

@@ -7,10 +7,22 @@
 // - Grid
 //---------------------------------------------------
 .banner-section{
-    background-image: url('#{$images-path}/bg-intro-desktop.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right top;
+    position: relative;
+    background-color: $color-alabaster;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('#{$images-path}/bg-intro-desktop.svg');
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: 10% center;
+      height: 655px;
+      width: 741px;
+    }
 
   .banner-row{
 
@@ -20,12 +32,13 @@
         }
 
         .content-col{
-            padding: 100px 0 170px;
+            padding: 131px 0 170px;
         }
 
         .image-col{
           position: absolute;
           right: -124px;
+          top: -111px;
         }
     }  
 }
@@ -35,4 +48,22 @@
 //---------------------------------------------------
 .banner-section{
 
+  .banner-row{
+
+    h1{
+      margin-bottom: 0;
+      padding-bottom: 23px;
+      color: $color-martinique;
+    }
+
+    .subhead{
+      margin-bottom: 35px;
+      color: $color-grayish-blue;
+      max-width: 452px;
+    }
+  }
+}
+
+#main-content{
+  padding-top: 80px;
 }
