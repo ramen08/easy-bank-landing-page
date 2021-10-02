@@ -47,12 +47,12 @@ $media-expressions: (
 
 //vendors - plugins
 @import "vendor/jcf";
-//@import "vendor/slick"; 
 
-//layouts
+//layouts 
 @import "layout/header/header";
 @import "layout/footer/footer";
 @import "layout/pages/home/banner-section";
+@import "layout/pages/home/why-choose-easybank-section";
 
 //modules
-@import "module/builder/buttons/button";
+@import "module/builder/buttons/button"; 

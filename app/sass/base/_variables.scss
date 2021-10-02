@@ -15,6 +15,7 @@ $color-light-grayish-blue: #f3f4f6;
 $color-very-light-gray:	#fafafa;
 $color-martinique: #2d314e;
 $color-alabaster: #f9f9f9;
+$color-athens-gray: #f4f5f7;
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
@@ -39,8 +40,8 @@ $body-color: $color-black !default;
 
 // Headers
 $h1-font-size: 56px !default;
-$h2-font-size: 42px !default;
-$h3-font-size: 33px !default;
+$h2-font-size: 40px !default;
+$h3-font-size: 24px !default;
 $h4-font-size: 18px !default;
 $h5-font-size: 16px !default;
 $h6-font-size: 15px !default;

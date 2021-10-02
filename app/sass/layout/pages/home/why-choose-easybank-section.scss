@@ -1,0 +1,63 @@
+//===================================================
+// Why Choose Easybank Section
+// - Grid
+// - Typography
+//===================================================
+//---------------------------------------------------
+// - Grid
+//---------------------------------------------------
+.why-choose-easybank-section{
+    background-color: $color-athens-gray;
+    padding-top: 68px;
+    padding-bottom: 101px;
+
+    .content-column {
+        max-width: 700px;
+    }
+
+    .blurb-row{
+        padding-top: 71px;
+
+        .blurb-item{
+            width: 25%;
+            display: inline-block;
+            float: left;
+            padding-right: 14px;
+
+            .image-wrapper{
+                padding-bottom: 38px;
+            }
+        }
+    }
+}
+
+//---------------------------------------------------
+// - Typography
+//---------------------------------------------------
+.why-choose-easybank-section{
+    
+    .why-choose-easybank-row{
+        color: $color-grayish-blue;
+
+        h2{
+            color: $color-martinique;
+            margin-bottom: 0;
+            padding-bottom: 24px;
+        }
+    }
+
+    .blurb-row{
+        padding-top: 71px;
+
+        .blurb-item{
+            color: $color-grayish-blue;
+            font-size: 16px;
+
+            h3{
+                color: $color-martinique;
+                margin: 0;
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
