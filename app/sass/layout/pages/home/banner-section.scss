@@ -39,6 +39,13 @@
           position: absolute;
           right: -124px;
           top: -111px;
+          width: 75%;
+          text-align: right;
+
+          @include media("<desktop-bootstrap"){
+            right: -210px;
+            width: 60%;
+          }
         }
     }  
 }

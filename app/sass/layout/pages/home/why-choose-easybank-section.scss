@@ -11,6 +11,11 @@
     padding-top: 68px;
     padding-bottom: 101px;
 
+    @include media("<tablet"){
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
     .content-column {
         max-width: 700px;
     }
@@ -18,11 +23,24 @@
     .blurb-row{
         padding-top: 71px;
 
+        @include media("<tablet"){
+            padding-top: 41px;
+        }
+
         .blurb-item{
             width: 25%;
             display: inline-block;
             float: left;
             padding-right: 14px;
+
+            @include media("<desktop"){
+                width: 50%;
+                margin-bottom: 30px;
+            }
+
+            @include media("<tablet"){
+                width: 100%;
+            }
 
             .image-wrapper{
                 padding-bottom: 38px;
