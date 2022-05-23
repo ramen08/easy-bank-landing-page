@@ -29,7 +29,7 @@ body {
     padding:0;
     overflow-x: hidden;
 
-    @include media("<tablet-1024"){
+    @include media("<ipad-landscape"){
       font-size: $body-font-size-tablet;
     }
 

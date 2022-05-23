@@ -30,6 +30,10 @@
     width: 33%;
     display: inline-block;
     margin-top: 24px;
+
+    @include media("<desktop"){
+      margin-top: 15px;
+    }
   }
 
   #logo {
@@ -46,25 +50,66 @@
   }
 
   .navigation-container{
-    display: flex;
     width: 67%;
     float: right;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+
+    @include media("<desktop") {
+      margin-top: 15px;
+    }
+
+    .navigation-menu{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include media("<desktop") {
+        position: fixed;
+        top: 64px;
+        background: linear-gradient(to bottom, $color-dark-blue-2 0%, transparent 90%);
+        display: block;
+        height: 0;
+        transition: all .8s ease;
+        overflow: hidden;
+        width: 100%;
+        left: 0;
+      }
+
+    }
 
     ul{
       list-style: none;
       padding-left: 0;
 
+      @include media("<desktop") {
+        width: 327px;
+        margin: 24px auto 0;
+        height: 265px;
+        background-color: $color-white;
+        border-radius: 5px;
+        padding-top: 21px;
+      }
+  
       li{
         float: left;
         padding-right: 32px;
+
+        @include media("<desktop") {
+          width: 100%;
+          text-align: center;
+          padding-bottom: 7px;
+          padding-right: 0;
+        }
         
         a{
           color: $color-grayish-blue;
           font-size: 15px;
           position: relative;
           padding-bottom: 31px;
+
+          @include media("<desktop") {
+            padding-bottom: 2px;
+          }
 
           &:hover,
           &:focus{

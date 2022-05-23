@@ -21,17 +21,41 @@
   .footer-logo-col{
     width: 26%;
     float: left;
+
+    @include media("<desktop") {
+      width: 28%;
+    }
+
+    @include media("<tablet") {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .footer-menu-col{
     width: 17.1%;
     float: left;
+
+    @include media("<tablet") {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .copyright-col{
     width: 39.8%;
     float: left;
     text-align: right;
+
+    @include media("<desktop") {
+      width: 37.8%;
+    }
+
+    @include media("<tablet") {
+      width: 100%;
+      text-align: center;
+      margin-top: 26px;
+    }
 
     .btn-wrapper{
       margin-bottom: 25px;
@@ -78,6 +102,11 @@
 
   .social-media-icons{
     margin-top: 47px;
+
+    @include media("<tablet") {
+      margin-top: 23px;
+      margin-bottom: 23px;
+    }
     
     .social-media-icon {
       display: inline-block;

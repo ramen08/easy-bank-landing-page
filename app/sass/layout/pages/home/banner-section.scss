@@ -21,33 +21,39 @@
       background-repeat: no-repeat;
       background-position: 10% center;
       height: 655px;
-      width: 741px;
+      width: 50%;
+      max-width: 741px;
+
+      @include media('<desktop-bootstrap') {
+        background-position: 9% center;
+      }
     }
 
   .banner-row{
+    display: flex;
+    flex-direction: column-reverse;
+    .col{
+      width: 50%;
+      float: left;
+    }
 
-        .col{
-          width: 50%;
-          float: left;
-        }
+    .content-col{
+        padding: 131px 0 170px;
+    }
 
-        .content-col{
-            padding: 131px 0 170px;
-        }
+    .image-col{
+      position: absolute;
+      right: -124px;
+      top: -111px;
+      width: 75%;
+      text-align: right;
 
-        .image-col{
-          position: absolute;
-          right: -124px;
-          top: -111px;
-          width: 75%;
-          text-align: right;
-
-          @include media("<desktop-bootstrap"){
-            right: -210px;
-            width: 60%;
-          }
-        }
-    }  
+      @include media("<desktop-bootstrap"){
+        right: -210px;
+        width: 60%;
+      }
+    }
+  }  
 }
 
 //---------------------------------------------------

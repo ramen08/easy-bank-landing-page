@@ -5,7 +5,7 @@ $breakpoints: (
 	'phone-bigger': 576px,
 	'tablet': 768px,
 	'desktop': 981px,
-	'tablet-1024': 1025px,
+	'ipad-landscape': 1025px,
 	'desktop-bootstrap' : 1200px,
     'desktop-smaller' : 1155px,
 	'desktop-1280' : 1281px, 
@@ -50,6 +50,7 @@ $media-expressions: (
 
 //layouts 
 @import "layout/header/header";
+@import "layout/header/header-mobile";
 @import "layout/footer/footer";
 @import "layout/pages/home/banner-section";
 @import "layout/pages/home/why-choose-easybank-section";
