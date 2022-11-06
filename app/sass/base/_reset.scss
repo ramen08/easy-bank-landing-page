@@ -72,6 +72,12 @@ img{
 
 
 #main-content{
+    padding-top: 80px;
+  
+    @include media("<desktop") {
+      padding-top: 59px;
+    }
+    
   a{
     word-wrap: break-word;
     word-break: break-word;
