@@ -57,10 +57,18 @@
     .why-choose-easybank-row{
         color: $color-grayish-blue;
 
+        @include media('<desktop') {
+            text-align: center;
+        }
+
         h2{
             color: $color-martinique;
             margin-bottom: 0;
             padding-bottom: 24px;
+
+            @include media('<desktop') {
+                text-align: center;
+            }
         }
     }
 
@@ -70,6 +78,10 @@
         .blurb-item{
             color: $color-grayish-blue;
             font-size: 16px;
+
+            @include media('<desktop') {
+                text-align: center;
+            }
 
             h3{
                 color: $color-martinique;

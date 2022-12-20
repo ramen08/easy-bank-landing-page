@@ -55,7 +55,14 @@
         padding: 131px 0 170px;
 
         @include media('<desktop') {    
-          padding: 0 0 57px;
+          padding: 30px 0 57px;
+        }
+
+        .btn-wrapper {
+          @include media('<desktop') {
+            text-align: center;
+            margin-top: 20px;
+          }
         }
     }
 
@@ -92,12 +99,28 @@
       margin-bottom: 0;
       padding-bottom: 23px;
       color: $color-martinique;
+
+      @include media('<desktop') {
+        text-align: center;
+        font-size: 33px;
+      }
+
+      @include media('<tablet') {
+      }
     }
 
     .subhead{
       margin-bottom: 35px;
       color: $color-grayish-blue;
       max-width: 452px;
+
+      @include media('<desktop') {
+        margin: auto;
+      }
+
+      @include media('<tablet') {
+        font-size: 15px;
+      }
     }
   }
 }
